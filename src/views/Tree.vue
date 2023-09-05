@@ -35,9 +35,9 @@ const getTree = () => {
 </script>
 
 <template>
-  <div class="flex items-center justify-stretch w-full h-full p-8 sm:p-16">
+  <div class="flex items-center justify-stretch w-full h-full p-4 sm:p-8">
 
-    <div class="grow bg-white px-8 sm:px-12 py-8 sm:py-12
+    <div class="grow bg-white px-4 sm:px-8 py-8 sm:py-12
       text-3xl font-bold text-yellow-900">
       <div class="text-center">
         <h1><span class="bg-yellow-300 px-4 py-1">Data Tahun 2023</span></h1>
@@ -51,32 +51,32 @@ const getTree = () => {
         <p>Pohon tidak ditemukan</p>
       </div>
 
-      <div v-else class="mt-12 grid grid-cols-6 gap-x-2 gap-y-8 sm:gap-y-12">
+      <div v-else class="mt-12 grid grid-cols-6 gap-x-2 gap-y-6 sm:gap-y-10">
         <p class="col-span-6 sm:col-span-2 text-2xl sm:text-3xl">
           Nama:
         </p>
-        <p class="-mt-8 sm:mt-0 col-span-6 sm:col-span-4">
+        <p class="-mt-6 sm:mt-0 col-span-6 sm:col-span-4">
           {{ tree?.name }}
         </p>
 
         <p class="col-span-6 sm:col-span-2 text-2xl sm:text-3xl">
           Jenis:
         </p>
-        <p class="-mt-8 sm:mt-0 col-span-6 sm:col-span-4">
+        <p class="-mt-6 sm:mt-0 col-span-6 sm:col-span-4">
           {{ tree?.type }}
         </p>
 
-        <p class="col-span-1 sm:col-span-2 text-2xl sm:text-3xl">
+        <p class="col-span-2 text-2xl sm:text-3xl">
           Usia:
         </p>
-        <p class="col-span-5 sm:col-span-4">
+        <p class="col-span-4">
           {{ Util.getAge(tree?.birthDate) }} tahun
         </p>
 
         <p class="col-span-6 sm:col-span-2 text-2xl sm:text-3xl">
           Lokasi:
         </p>
-        <p class="-mt-8 sm:mt-0 col-span-6 sm:col-span-4">
+        <p class="-mt-6 sm:mt-0 col-span-6 sm:col-span-4">
           {{ tree?.location }}
         </p>
       </div>
